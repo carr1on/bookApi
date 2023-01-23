@@ -1,0 +1,30 @@
+###
+// create
+POST http://localhost:8080/book HTTP/1.1
+content-type: application/json
+
+{"Name":"21","Author": "Movie third", "Publication":"Smith"}
+
+###
+// get Movie by ID
+GET http://localhost:8080/book/1 HTTP/1.1
+content-type: application/json
+
+###
+// update
+PUT http://localhost:8080/book/1 HTTP/1.1
+content-type: application/json
+
+{"Name":"2","Author": "Movie", "Publication":"Smith"}
+
+###
+// get all Movies
+GET http://localhost:8080/book HTTP/1.1
+content-type: application/json
+
+###
+// delete
+DELETE http://localhost:8080/book/1 HTTP/1.1
+content-type: application/json
+
+###
